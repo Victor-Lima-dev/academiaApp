@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-1: green;
+    --cor-2: white;
+    --cor-3: gold;
+    --cor-4: blue;
+    --font: 'Roboto';
+    --font-size: 1.1rem;
+    --shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+
+    --tela: 40.625rem;
+    --display-s:content;
+    --display-n:none;
+}
+body
+{
+    background: var(--cor-3);
+   
+    margin: 0 auto;
+    border: 1px solid var(--cor-2);
+}
+
+a
+{
+    text-decoration: none;
+    text-align: center;
+}
+
+.tela-1
+{
+    background: var(--cor-3);
+    display: var(--display-s);
+}
+.tela-2
+{
+    border: transparent;
+    display: var(--display-s);
+}
+
+.tela-3
+{
+    display: var(--display-s);
+}
+.tela-4
+{
+    display: var(--display-s);
+}
+
+
+
+/*Tela-1*/
+
+
+    /*Header*/
+.section_header {
+    padding: 2rem;
+    background: var(--cor-1);
+}
+
+.section__titulo
+{
+    color: var(--cor-2);
+    text-align: center;
+    font-family: var(--font);
+}
+    /*corpo*/
+.corpo
+{
+    height: 31.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.25rem;
+    padding: 0.625rem;
+   
+    margin: 0 auto; 
+}
+
+.corpo__botao
+{
+   flex: 1;
+   padding: 1.25rem;
+   font-family: var(--font);
+   font-weight: 600;
+   font-size: large;
+   color: white;
+   border-radius: 8px;
+   background-color: var(--cor-1);
+   border: none;
+   cursor: pointer;
+}
+
+@media screen and (min-width:700px) {
+    .corpo{
+    width: var(--tela);
+    }
+    body
+    {
+        width: var(--tela);
+    }
+}
+
+/*Tela-2*/
+    /*Form*/
+
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+}
+    form
+{
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+.form__input
+{
+    padding: .3rem;
+    border: none;   
+    width: 15rem;
+}
+
+.form__caixa
+{
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.form__label
+{
+    display: block;
+    font-family:var(--font);
+    font-weight: 600;  
+    margin-bottom: .5rem;
+    font-size: var(--font-size)
+}
+
+@media screen and (min-width:700px) {
+    form{
+    width: var(--tela);
+    }
+}
+
+/*Tela-3*/
+.section__tela
+{
+    margin-top: 4rem;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.teste
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.botoes
+{
+    display: flex;
+    gap: 3rem;
+}
+
+/*Tela-4*/
+
+.lista__treino
+{
+    padding: 0.625rem;
+    border: 1px solid var(--cor-2);
+    width: 40%;
+    height: 8rem;
+    margin: 1rem;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:var(--cor-4);
+    flex: 1 1 1;
+}
+
+.lista__item
+{
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--cor-2);
+}
+
+.treinos
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
