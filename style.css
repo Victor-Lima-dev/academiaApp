@@ -5,9 +5,9 @@
 }
 
 :root {
-    --cor-1: green;
+    --cor-1: #13678A;
     --cor-2: white;
-    --cor-3: gold;
+    --cor-3: #e1f4d0;
     --cor-4: blue;
     --font: 'Roboto';
     --font-size: 1.1rem;
@@ -50,8 +50,17 @@ a
 {
     display: var(--display-s);
 }
+i
+{
+    cursor: pointer;
+}
 
-
+.icones
+{
+    display: flex;
+    justify-content: end;
+    gap: 0.625rem;
+}
 
 /*Tela-1*/
 
