@@ -4,6 +4,8 @@ const carga = document.querySelector("#carga")
 const form = document.querySelector("#form")
 const treinos = document.querySelector("#treinos")
 
+const selecionarTreino = document.querySelector("#selecionarTreino")
+
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
     validacao()
@@ -23,6 +25,8 @@ const validacao = ()=>
 
 let dados = []
 
+
+
 const acessarDados = ()=>
 {
     dados.push({
@@ -33,6 +37,7 @@ const acessarDados = ()=>
     localStorage.setItem("dados", JSON.stringify(dados))
 
     criarExercicio()
+    
 }
 
 const criarExercicio = ()=>
@@ -52,8 +57,25 @@ const criarExercicio = ()=>
     </ul>`
     })
 
+selecionarTreino.innerHTML = ""
+   dados.map((x,y) => {
+               return selecionarTreino.innerHTML +=
+       `<ul class="lista__treino click" id ="${y}">
+           <li class="lista__item">${x.exercicio}</li>
+          <li class="lista__item">${x.series}</li>
+           <li class="lista__item">${x.carga}</li>
+           <div class="icones">
+                    <i onClick="editar(this)" class="fa-regular fa-pen-to-square"></i>
+                    <i onClick="deletar(this), criarExercicio()"class="fa-solid fa-trash"></i>
+                </div>
+  </ul>`
+  })
+
+
+
     resetarForm()
 }
+
 
 const resetarForm = ()=>
 {
@@ -70,11 +92,12 @@ const resetarForm = ()=>
 const deletar = (e)=>
 {
 
-    e.parentElement.parentElement.remove()  
+    e.parentElement.parentElement.remove()
+    //selecionarTreino.innerHTML = ""  
     dados.splice(e.parentElement.parentElement.id, 1)
 
     localStorage.setItem("dados", JSON.stringify(dados))
-  console.log(dados)
+
 
 }
 

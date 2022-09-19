@@ -14,8 +14,8 @@
     --shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
 
     --tela: 40.625rem;
-    --display-s:content;
-    --display-n:none;
+    --display-s:none;
+    --display-n:content;
 }
 body
 {
@@ -62,6 +62,11 @@ i
     gap: 0.625rem;
 }
 
+
+.click
+{
+    cursor: pointer;
+}
 /*Tela-1*/
 
 

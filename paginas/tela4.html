@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="tela-4"> <!--Tela 4-->
@@ -49,5 +49,22 @@
             
         </div>
 
+    </div> <!--Tela 4-->
+
+    <div class="tela-5">
+        <div class="section_header form" id="selecionarTreino">
+            <h1 class="section__titulo">Escolha seu exercicio</h1>
+            <ul class="lista__treino click" id ="${y}">
+                <li class="lista__item">exercicio</li>
+                <li class="lista__item">series</li>
+                <li class="lista__item">carga</li>
+                <div class="icones">
+                        <i onClick="editar(this)" class="fa-regular fa-pen-to-square"></i>
+                        <i onClick="deletar(this), criarExercicio()"class="fa-solid fa-trash"></i>
+                    </div>
+        </ul>
+        </div>
     </div>
+    
+    <script src="/main.js"></script>
 </body>
