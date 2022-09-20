@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-   
-    <div class="tela-3"> <!--Tela 3-->
+
+    <div class="tela-3">
+        <!--Tela 3-->
         <section class="section_header">
-            <h1 class="section__titulo">Como foi o treino?</h1>
+            <h1 class="section__titulo">Grupos</h1>
         </section>
         <section class="section__tela">
-            <div class="form__caixa">
-                <label for="" class="form__label">Escreva como foi a experiencia</label>
-                <textarea name="" id="" cols="30" rows="5" class="form__input"></textarea>
+            <a class="corpo__botao">Adicionar grupo</a>
+            <a class="corpo__botao">Ver grupos</a>
+    </div>
+    </section>
+    </div>
+    <!--Fim tela 3-->
+
+    <div class="tela__adicionarGrupo">
+        <section class="form">
+            <div class="section_header header">
+                <h1 class="section__titulo ">Adicione o grupo</h1>
             </div>
-            <div class="form__caixa teste">
-                <h2 class="section__titulo">
-                    Houve evolução de carga?
-                </h2>
-                <div class="botoes">
-                    <button class="corpo__botao">Sim</button>
-                    <button class="corpo__botao">Nao</button>
+            <form id="formGrupo">
+                <div class="form__caixa">
+                    <label class="form__label" for="">Defina um nome</label>
+                    <input id="grupoNome" class="form__input" type="text">
+                </div>
+                <button class="corpo__botao">Adicionar</button>
+                <button class="corpo__botao" id="resetar">Resetar</button>
+            </form>
+    </div>
+
+    <div class="tela-4">
+        <!--Tela 4-->
+        <section class="section_header">
+            <h1 class="section__titulo">
+                Lista de Grupos
+            </h1>
+        </section>
+        <div class="itensGrupos" id="itensGrupos">
+            <div>
+                <h1 class="section__titulo">Nome</h1>
+                <div class="treinos" id="treinos">
+                    <ul class="lista__treino">
+                        <li class="lista__item">Treino</li>
+                        <li class="lista__item">Treino</li>
+                        <li class="lista__item">Treino</li>
+                        <div class="icones">
+                            <i onclick="deletar(this)" class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </ul>
+                </div>
+                <div class="treinos" id="treinos">
+                    <ul class="lista__treino">
+                        <li class="lista__item">Treino</li>
+                        <li class="lista__item">Treino</li>
+                        <li class="lista__item">Treino</li>
+                        <div class="icones">
+                            <i onclick="deletar(this)" class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </div><!--Fim tela 3-->
-    
+        </div>
+<script src="/criarGrupo.js"></script>
 </body>

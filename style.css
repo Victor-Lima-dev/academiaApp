@@ -5,16 +5,16 @@
 }
 
 :root {
-    --cor-1: #13678A;
+    --cor-1: green;
     --cor-2: white;
-    --cor-3: #e1f4d0;
+    --cor-3: gold;
     --cor-4: blue;
     --font: 'Roboto';
     --font-size: 1.1rem;
     --shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
 
     --tela: 40.625rem;
-    --display-s:none;
+    --display-s:content;
     --display-n:content;
 }
 body
@@ -50,17 +50,8 @@ a
 {
     display: var(--display-s);
 }
-i
-{
-    cursor: pointer;
-}
 
-.icones
-{
-    display: flex;
-    justify-content: end;
-    gap: 0.625rem;
-}
+
 
 
 .click
@@ -74,6 +65,7 @@ i
 .section_header {
     padding: 2rem;
     background: var(--cor-1);
+    border: 1px solid red;
 }
 
 .section__titulo
@@ -93,6 +85,8 @@ i
     padding: 0.625rem;
    
     margin: 0 auto; 
+    
+    border: 1px solid red;
 }
 
 .corpo__botao
@@ -107,6 +101,8 @@ i
    background-color: var(--cor-1);
    border: none;
    cursor: pointer;
+
+   border: 1px solid red;
 }
 
 @media screen and (min-width:700px) {
@@ -121,6 +117,12 @@ i
 
 /*Tela-2*/
     /*Form*/
+
+.itensGrupos
+{
+    border: 1px solid blue;
+
+}
 
 
 .form
@@ -137,6 +139,8 @@ i
     flex-direction: column;
     
     text-align: center;
+
+    border: 1px solid red;
 }
 
 .form__input
@@ -176,6 +180,8 @@ i
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+
+    border: 1px solid red;
 }
 
 .teste

@@ -57,19 +57,19 @@ const criarExercicio = ()=>
     </ul>`
     })
 
-selecionarTreino.innerHTML = ""
-   dados.map((x,y) => {
-               return selecionarTreino.innerHTML +=
-       `<ul class="lista__treino click" id ="${y}">
-           <li class="lista__item">${x.exercicio}</li>
-          <li class="lista__item">${x.series}</li>
-           <li class="lista__item">${x.carga}</li>
-           <div class="icones">
-                    <i onClick="editar(this)" class="fa-regular fa-pen-to-square"></i>
-                    <i onClick="deletar(this), criarExercicio()"class="fa-solid fa-trash"></i>
-                </div>
-  </ul>`
-  })
+// selecionarTreino.innerHTML = ""
+//    dados.map((x,y) => {
+//                return selecionarTreino.innerHTML +=
+//        `<ul class="lista__treino click" id ="${y}">
+//            <li class="lista__item">${x.exercicio}</li>
+//           <li class="lista__item">${x.series}</li>
+//            <li class="lista__item">${x.carga}</li>
+//            <div class="icones">
+//                     <i onClick="editar(this)" class="fa-regular fa-pen-to-square"></i>
+//                     <i onClick="deletar(this), criarExercicio()"class="fa-solid fa-trash"></i>
+//                 </div>
+//   </ul>`
+//   })
 
 
 
